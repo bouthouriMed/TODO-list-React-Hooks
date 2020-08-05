@@ -6,7 +6,7 @@ function Template({todos,deleteTodo}) {
     todos.map( todo => {
       return (
         <div className="collection-item" key={todo.id}>
-          <span className="mySpan" style={{display:'flex',justifyContent:'space-between'}}> {todo.content}  <button onClick={()=> deleteTodo(todo.id)} className="btn waves-effect waves-light btn-small" type="submit" name="action">Delete </button></span>
+          <span className="mySpan" style={{display:'flex',justifyContent:'space-between'}}> {todo.content}  <button onClick={()=> deleteTodo(todo.id)} className="btn waves-effect waves-light btn-small" type="submit" name="action" style={{borderRadius:'20px'}}>Delete </button></span>
         </div>
       )
     })
