@@ -14,7 +14,9 @@ function AddTodo({addTodo}) {
         const handleSubmit = (e) => {
             e.preventDefault();
             content ? (addTodo(content)) : (alert("Please add a todo"))
-            setContent("")
+            // setContent("") ;
+          
+            
         }
        
         
